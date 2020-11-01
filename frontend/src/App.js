@@ -5,12 +5,17 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
-import Loggedin from "./components/loggedin";
+import LoggedIn from "./components/loggedIn";
 import  userDetails from "./components/userDetails.component";
-//import  userDetails2 from "./components/userDetails2.component";
+import  One from "./components/One";
+import  Two from "./components/two";
 
+//import  userDetails2 from "./components/userDetails2.component";
 function App() {
-  return (<Router>
+  window.MyLib = {}
+  return (
+  
+  <Router>
     
           <Switch>
             <Route exact path='/' component={Login} />
@@ -18,7 +23,11 @@ function App() {
             <Route path="/userDetails" component={userDetails} />
             
             <Route path="/sign-in" component={Login} />
-            <Route path="/loggedin" component={Loggedin} />
+            
+            <Route path="/loggedIn" component={LoggedIn} />
+            <Route path="/personal" component={One} />
+            <Route path="/professional" component={Two} />
+
           </Switch>
         </Router>
   );

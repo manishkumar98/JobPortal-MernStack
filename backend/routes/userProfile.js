@@ -5,19 +5,6 @@ const User = require('../models/user')
 const multer=require('multer')
 const mongoose = require('mongoose')
 const path = require('path')
-
-
-
-
-
-
-
-
-
-
-
-
-
 const storage=multer.diskStorage({
     destination:function(req,file,cb){
         cb(null,'./profilePic/')
@@ -192,7 +179,7 @@ router1.patch("/:email",upload.single('resume'), (req, res, next) => {
     description: req.body.description,
     currentlyWorkingIn: req.body.currentlyWorkingIn,
     startDate: req.body.startDate, 
-   resume: req.file.path
+    resume: req.file.path
    
   });
   userProfile

@@ -57,8 +57,8 @@ axios.post('/login', {
       .then(response => {
          if(response.data.Success === "Success!")
 {
-         window.location = "/loggedin";   
-         this.setState({ error: response.data.Success});    
+    window.name = this.state.email;
+window.location = "/loggedIn";   
           }
           else{
             this.setState({ error: response.data.Success});    
@@ -102,6 +102,7 @@ axios.post('/login', {
                     <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
                   </li>
                 </ul>
+                
               </div>
             </div>
           </nav>
@@ -141,7 +142,7 @@ axios.post('/login', {
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>
                 </p>
-                {this.state.error}
+              
             </form>
 </div>
 </div></div></div>        );

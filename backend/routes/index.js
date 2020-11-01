@@ -79,8 +79,8 @@ router.post('/login', (req, res, next) => {
 			if (data.password == req.body.password) {
 				//console.log("Done Login");
 				req.session.userId = data.unique_id;
-				//console.log(req.session.userId);
-				res.json({ "Success": "Success!" });
+				console.log(req.session.userId);
+				res.json({ "Success": "Success!"});
 
 			} else {
 				res.json({ "Success": "Wrong password!" });
@@ -114,7 +114,7 @@ router.get('/logout', (req, res, next) => {
 				next(err);
 			} else {
 				console.log("logged out")
-				res.redirect('/');
+				res.json("Logged Out")
 			}
 		});
 	}

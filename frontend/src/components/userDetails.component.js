@@ -260,13 +260,13 @@ class userDetails extends React.Component{
 <form>
               <div className="margin">
                     <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">First Name </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">First Name </Form.Label>
         <Form.Control  type="text" value={this.state.firstName} placeholder="Enter first name" onChange={this.handleFirstName} />
       </Form.Group>
 
     
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">Last Name </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">Last Name </Form.Label>
         <Form.Control value={this.state.lastName} type="text" onChange={this.handleLastName} placeholder="Enter last name" />
       </Form.Group>
     
@@ -274,13 +274,13 @@ class userDetails extends React.Component{
   
     
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">Email address </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">Email address </Form.Label>
         <Form.Control value={this.state.email} type="email" onChange={this.handleEmail} placeholder="Enter email" />
       </Form.Group>
     
    
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">Phone </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">Phone </Form.Label>
         <Form.Control value={this.state.phone} onChange={this.handlePhone} type="text" placeholder="Enter phone number" />
       </Form.Group>
       
@@ -289,22 +289,22 @@ class userDetails extends React.Component{
 
       
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">Country </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">Country </Form.Label>
         <Form.Control value={this.state.country} onChange={this.handleCountry} type="text" placeholder="Enter country name" />
       </Form.Group>
   
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">City </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">City </Form.Label>
         <Form.Control value={this.state.city} onChange={this.handleCity} type="text" placeholder="Enter city name" />
       </Form.Group>
       
       <Form.Group controlId="formBasicEmail">
-        <Form.Label style={{color: "black"}} class="label-txt">Date Of Birth </Form.Label>
+        <Form.Label style={{color: "black"}} className="label-txt">Date Of Birth </Form.Label>
         <Form.Control value={this.state.dateOfBirth} onChange={this.handleDateOfBirth} type="text" placeholder="mm/dd/yyyy" />
       </Form.Group>
 
       <Form.Group controlId="exampleForm.ControlSelect1">
-        <Form.Label class="label-txt"> Upload Resume*</Form.Label>
+        <Form.Label className="label-txt"> Upload Resume*</Form.Label>
       </Form.Group>
       <Form.Group>
       <input type="file" name="file" onChange={this.handleResume}/>
@@ -351,12 +351,12 @@ else{
 
     
         <div className = "backButton">               
-<Button classname = "button" variant="primary" onClick = {this.handleBack}> <text>{'<-'}</text> Back</Button>{' '}
+<Button className = "button" variant="primary" onClick = {this.handleBack}> <text>{'<-'}</text> Back</Button>{' '}
 
 </div>
 
 <Form.Group controlId="exampleForm.SelectCustom">
-<Form.Label class="label-txt">Current Employment Status*</Form.Label>
+<Form.Label className="label-txt">Current Employment Status*</Form.Label>
 <Form.Control as="select" custom  value = {this.state.currentEmploymentStatus} onChange = {this.handleCurrentEmploymentStatus}>
   <option>Employed</option>
   <option>Unemployed</option>
@@ -370,27 +370,27 @@ else{
 
 
 <Form.Group controlId="formBasicEmail">
-<Form.Label class="label-txt">Current Job Title</Form.Label>
+<Form.Label className="label-txt">Current Job Title</Form.Label>
 <Form.Control type="text" placeholder="Enter job title" value = {this.state.currentJobTitle} onChange = {this.handleCurrentJobTitle}/>
 </Form.Group>
 <Form.Group controlId="formBasicEmail">
-<Form.Label class="label-txt">Seeking Job Title*</Form.Label>
+<Form.Label className="label-txt">Seeking Job Title*</Form.Label>
 <Form.Control type="text" placeholder="e.g. Software Developer" value = {this.state.seekingJobTitle} onChange = {this.handleSeekingJobTitle}/>
 </Form.Group>
 <Form.Group controlId="formBasicEmail">
-<Form.Label class="label-txt">Current Working In</Form.Label>
+<Form.Label className="label-txt">Current Working In</Form.Label>
 <Form.Control type="text" placeholder="e.g. Microsoft" value = {this.state.currentlyWorkingIn} onChange = {this.handleCurrentlyWorkingIn}/>
 </Form.Group>
 <Form.Group controlId="formBasicEmail">
-<Form.Label style={{color: "black"}} class="label-txt">Start Date </Form.Label>
+<Form.Label style={{color: "black"}} className="label-txt">Start Date </Form.Label>
 <Form.Control value={this.state.startDate} onChange={this.handleStartDate} type="text" placeholder="mm/dd/yyyy" />
 </Form.Group>
 <Form.Group controlId="exampleForm.SelectCustom">
-<Form.Label class="label-txt">Industry</Form.Label>
+<Form.Label className="label-txt">Industry</Form.Label>
 <Form.Control type="text" placeholder="Enter industry" value = {this.state.industry} onChange = {this.handleIndustry}/>
 </Form.Group>
 <Form.Group controlId="formBasicEmail">
-<Form.Label class="label-txt">Description *</Form.Label>
+<Form.Label className="label-txt">Description *</Form.Label>
 <Form.Control type="textarea" placeholder="Enter description" value = {this.state.description} onChange = {this.handleDescription}/>
 </Form.Group>  
 <div>
