@@ -48,7 +48,7 @@
     "rollup-plugin-babel": "^2.6.1",
     "standard": "^8.0.0",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.1",
+    "webpack-dev-server": "^3.1.11",
     "semantic-release": "^4.3.5"
   },
   "peerDependencies": {
